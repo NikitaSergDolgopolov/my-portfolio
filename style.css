@@ -30,6 +30,7 @@ body{
 }
 
 
+
 header{
   padding: 40px 0 30px;
   display: flex;
@@ -185,6 +186,11 @@ nav .navlinks li a{
   color:#000;
 
 }
+
+.hero-text .spacer {
+  height: 10px;
+}
+
 .btn-group{
   margin:45px 0;
 }
