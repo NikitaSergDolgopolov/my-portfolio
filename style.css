@@ -37,7 +37,8 @@ header{
   align-items: center;
   flex-wrap: wrap;
 
-  background-color: magenta; /* deep red */
+  background-color: white; /* deep red */
+  border: 3px solid #AA142D; /* red border */
   padding: 20px;
   display: flex;
   justify-content: space-between;
