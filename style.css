@@ -41,7 +41,7 @@ header{
 .logo i{
   height: 45px;
   width:45px;
-  background-color: #007ced;
+  background-color: #AA142D;
   border-radius: 50%;
   color:#fff;
   font-weight: 700;
@@ -146,11 +146,11 @@ nav .navlinks li a{
   font-size: 14px;
 }
 .hero-text h5 span{
-  color:#E31937;
+  color:#AA142D;
   font-size: 16px;
 }
 .hero-text h1{
-  color: #E31937;
+  color: #AA142D;
   font-size: 3rem;
 }
 .hero-text p{
@@ -161,7 +161,7 @@ nav .navlinks li a{
   margin:45px 0;
 }
 .btn-group .btn{
-  border-color: #E31937;
+  border-color: #AA142D;
   color:#888;
   background-color: #e5e5e5;
   padding: 12px 25px;
@@ -172,10 +172,10 @@ nav .navlinks li a{
   box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
 }
 .btn.active{
-  border-color: #007ced;
+  border-color: #AA142D;
 }
 .hero-text .social i{
-  color: #E31937;
+  color: #AA142D;
   font-size: 18px;
   margin-right: 10px;
   transition: 0.5s;
