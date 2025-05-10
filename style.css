@@ -1,8 +1,9 @@
-
-h1 {
-  color: #003366;
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 *{
   box-sizing: border-box;
@@ -21,6 +22,8 @@ body{
   height: 100%;
   min-height: 100vh;
   background: #fff;
+  padding: 0;
+  margin: 0;
 }
 .wrapper{
   width:1280px;
@@ -146,6 +149,8 @@ nav .navlinks li a{
   justify-content: space-around;
   align-items: center;
   padding-top:4rem;
+  margin-top: 0;
+  padding-top: 0;
 }
 .container .hero-pic{
   width: 500px;
