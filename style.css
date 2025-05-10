@@ -180,15 +180,11 @@ nav .navlinks li a{
 }
 .hero-text h1{
   color: #AA142D;
-  font-size: 3rem;
+  font-size: 8rem;
 }
 .hero-text p{
   color:#000;
 
-}
-
-.hero-text .spacer {
-  height: 10px;
 }
 
 .btn-group{
