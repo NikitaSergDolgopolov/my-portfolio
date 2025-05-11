@@ -16,6 +16,7 @@ body{
   overflow-x: hidden;
 }
 
+/* header and wrapper */
 
 .hero-header{
   width:100%;
@@ -33,7 +34,7 @@ body{
   padding: 0 20px;
 }
 
-
+/* header */
 
 header{
   padding: 40px 0 30px;
@@ -51,7 +52,6 @@ header{
   color: white;
 }
 
-
 .a {
   color: black;
   text-decoration: none;
@@ -62,7 +62,7 @@ header{
   text-decoration: underline;
 }
 
-
+/* profile pic */
 
 .logo{
   display: inline-flex;
@@ -89,7 +89,37 @@ header{
   color:#000;
 }
 
+/* horizontal and vertical groups */
 
+.columnboard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.columnboard h5 {
+  font-size: 22px;
+}
+
+.horizontal-group {
+  display: flex;
+  gap: 20px;
+}
+
+.vertical-list {
+  list-style-type: disc;     /* bullet points */
+  padding-left: 20px;        /* indent */
+  margin-top: 10px;
+}
+
+.vertical-list li {
+  margin-bottom: 8px;        /* spacing between items */
+}
+
+/* checkerboard pattern */
 
 .checkerboard {
   display: grid;
@@ -114,7 +144,7 @@ header{
 }
 
 
-
+/* nav */
 
 nav .togglebtn{
   width: 35px;
@@ -137,7 +167,7 @@ nav .togglebtn span{
 
 }
 
-
+/* navlinks */
 
 nav .navlinks{
   list-style-type: none;
@@ -150,6 +180,7 @@ nav .navlinks li a{
    margin-right: 2.5rem;
 }
 
+/* hero block */
 
 .container {
   display: flex;
@@ -186,10 +217,12 @@ nav .navlinks li a{
 .hero-text h5{
   color:#000;
   font-size: 20px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 .hero-text h5 span{
   color:#AA142D;
-  font-size: 16px;
+  font-size: 20px;
 }
 .hero-text h1{
   color: #AA142D;
@@ -200,10 +233,10 @@ nav .navlinks li a{
 
 }
 
-
+/* buttons */
 
 .btn-group{
-  margin:45px 0;
+  margin:35px 0;
 }
 .btn-group .btn{
   border-color: #AA142D;
@@ -304,7 +337,9 @@ nav .navlinks li a{
 .pdf-preview {
   max-width: 700px;
   height: 700px;
+  margin-top: 20px;
   margin-left: 20px;
+  margin-right: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
