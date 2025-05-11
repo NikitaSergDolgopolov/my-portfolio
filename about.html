@@ -61,13 +61,20 @@
                     <a href="https://drive.google.com/file/d/1sB42PJk7nV5XCxSXB4TriV5WQZZQ6mi_/view?usp=sharing" target="_blank" class="btn active">Скачать Резюме</a>
                     <a href="contact.html" target="_blank" class="btn active">Контакты</a> 
                 </div>
-                
+                <button onclick="copyText(this)">Скопировать текст</button>
              </div>
         </div>
     </div>
  </div>
+
+ <footer>
+    <p>&copy; 2025 Никита Долгополов</p>
+ </footer>
+
  <!---typed js for typing text effect-->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+
+
  <script>
     /** creating button click show hide navbar **/
     var togglebtn=document.querySelector(".togglebtn");
@@ -80,8 +87,18 @@
     })
 
  </script>
- <footer>
-    <p>&copy; 2025 Никита Долгополов</p>
-  </footer>
+
+
+<script>
+    function copyText(element) {
+      const text = element.innerText; // get button text
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Скопировано: " + text); // Optional confirmation
+      }).catch(err => {
+        console.error("Ошибка копирования:", err);
+      });
+    }
+</script>
+
 </body>
 </html>
