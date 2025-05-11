@@ -167,8 +167,6 @@ nav .navlinks li a{
   border: 15px solid #AA142D;
   box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
 }
-
-
 .hero-pic img{
   height: 150%;
   width:150%;
@@ -179,6 +177,7 @@ nav .navlinks li a{
 .hero-pic img:hover{
   transform: scale(1.2);
 }
+
 .hero-text{
   max-width: 500px;
   display: flex;
@@ -299,4 +298,26 @@ nav .navlinks li a{
   .hero-text{
       padding:40px 0px;
   }
+}
+
+
+.pdf-preview {
+  max-width: 700px;
+  height: 700px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pdf-preview iframe {
+  width: 600px;
+  height: 800px;
+  border: 2px solid #AA142D;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+.pdf-preview .btn {
+  margin-top: 5px;
 }

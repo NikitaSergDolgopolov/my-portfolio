@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Резюме- Никита Долгополов</title>
+  <link rel="stylesheet" href="style.css" />
+  <!----Font awesome cdn  font icon css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+  <div class="hero-header">
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <div class="logo-text">Никита Долгополов</div>
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="projects.html">Портфолио</a></li>
+                    <li><a href="resume.html">Резюме</a></li>
+                    <li><a href="reports.html">Тех Документация</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="pdf-preview">
+                <iframe src="documents/Долгополов Никита Сергеевич Резюме.pdf" frameborder="0"></iframe>
+            </div>
+             <div class="hero-text">
+                <h1>Никита Долгополов</h1>
+                <h5>Инженер-конструктор</h5>
+                <p> Я закончил Корнельский Университет (Cornell University) с отличием по программе бакалавра инженер-механик, при этом приобретя опыт и закрепив навыки в электронике и управленческой деятельности.
+                </p>
+                <br><p>Я участвовал в нескольких исследовательских проектах, связанных с инновационными технологиями, и прослужил Главным Инженером-Конструктором и Президентом инженерной команды Cornell Hyperloop. 
+                </p>
+                <br></p>Я отстажировался в компании Tesla Inc., закрепив профессиональные навыки и технический английский и теперь возвращаюсь в Россию для работы в проектах связанных с автономией, автоматизацией, и производственными технологиями.
+            </p>
+
+             </div>
+        </div>
+    </div>
+ </div>
+
+ <footer>
+    <p>&copy; 2025 Никита Долгополов</p>
+ </footer>
+
+ <script>
+    /** creating button click show hide navbar **/
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    var links=document.querySelector(".navlinks li");
+
+    togglebtn.addEventListener("click", function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+    })
+
+ </script>
+
+
+</body>
+</html>
