@@ -95,13 +95,13 @@ header{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 300px;
+  max-width: 350px;
   margin: 0 auto;
   margin-top: 20px;
 }
 
 .columnboard h5 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .horizontal-group {
@@ -236,7 +236,7 @@ nav .navlinks li a{
 /* buttons */
 
 .btn-group{
-  margin:35px 0;
+  margin:20px 0;
 }
 .btn-group .btn{
   border-color: #AA142D;
@@ -335,7 +335,7 @@ nav .navlinks li a{
 
 
 .pdf-preview {
-  max-width: 700px;
+  max-width: 600px;
   height: 700px;
   margin-top: 20px;
   margin-left: 20px;
