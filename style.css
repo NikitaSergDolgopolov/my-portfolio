@@ -94,7 +94,7 @@ header{
 .columnboard {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   max-width: 350px;
   margin: 0 auto;
   margin-top: 20px;
@@ -104,10 +104,31 @@ header{
   font-size: 20px;
 }
 
+.columnboard-wide {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .horizontal-group {
   display: flex;
   gap: 20px;
 }
+
+.horizontal-group img{
+  width: 200%;
+  max-width: 350px;
+  min-width: 200px;
+  max-height: 200px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 
 .vertical-list {
   list-style-type: disc;     /* bullet points */

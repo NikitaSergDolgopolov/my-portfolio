@@ -1,19 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Обо мне - Никита Долгополов</title>
+  <link rel="stylesheet" href="style.css" />
+  <!----Font awesome cdn  font icon css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-  <h1>Main page Yessir</h1>
+  <div class="hero-header">
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <div class="logo-text">Никита Долгополов</div>
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="projects.html">Портфолио</a></li>
+                    <li><a href="resume.html">Резюме</a></li>
+                    <li><a href="reports.html">Тех Документация</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+             <div class="hero-pic">
+                <img src="images/main_picture.jpg" alt="profile pic">
+             </div>
+             <div class="hero-text">
+                <h1>Никита Долгополов</h1>
+                <h5>Инженер-конструктор</h5>
+                <p> Я закончил Корнельский Университет (Cornell University) с отличием по программе бакалавра инженер-механик, при этом приобретя опыт и закрепив навыки в электронике и управленческой деятельности.
+                </p>
+                <br><p>Я участвовал в нескольких исследовательских проектах, связанных с инновационными технологиями, и прослужил Главным Инженером-Конструктором и Президентом инженерной команды Cornell Hyperloop. 
+                </p>
+                <br></p>Я отстажировался в компании Tesla Inc., закрепив профессиональные навыки и технический английский и теперь возвращаюсь в Россию для работы в проектах связанных с автономией, автоматизацией, и производственными технологиями.
+                </p>
 
-  <nav>
-    <a href="index.html">Главная</a>
-    <a href="about.html">Обо мне</a>
-    <a href="projects.html">Портфолио</a>
-    <a href="resume.html">Резюме</a>
-    <a href="reports.html">Тех Документация</a>
-    <a href="contact.html">Контакты</a>
-  </nav>
+                <div class="checkerboard">
+                    <div class="cell logo"><img src="images/logo_tesla_white.png" alt="Logo 1"></div>
+                    <div class="cell"></div>
+                    <div class="cell logo"><img src="images/logo_hyperloop_bear.png" alt="Logo 2"></div>
+                    <div class="cell"></div>
+                  
+                    <div class="cell"></div>
+                    <div class="cell logo"><img src="images/cornell_seal_simple_web_black.png" alt="Logo 3"></div>
+                    <div class="cell"></div>
+                    <div class="cell logo"><img src="images/logo_css.png" alt="Logo 4"></div>
+                </div>
+
+                <div class="btn-group">
+                    <a href="https://drive.google.com/file/d/1sB42PJk7nV5XCxSXB4TriV5WQZZQ6mi_/view?usp=sharing" target="_blank" class="btn active">Скачать Резюме</a>
+                    <button class="btn secondary-btn" onclick="copyText(this)">nikitaserg.dolgopolov@gmail.com</button>
+                </div>
+
+             </div>
+        </div>
+    </div>
+ </div>
+
+ <footer>
+    <p>&copy; 2025 Никита Долгополов</p>
+ </footer>
+
+ <script>
+    /** creating button click show hide navbar **/
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    var links=document.querySelector(".navlinks li");
+
+    togglebtn.addEventListener("click", function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+    })
+
+ </script>
+
+
+<script>
+    function copyText(element) {
+      const text = element.innerText; // get button text
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Скопировано: " + text); // Optional confirmation
+      }).catch(err => {
+        console.error("Ошибка копирования:", err);
+      });
+    }
+</script>
+
 </body>
 </html>

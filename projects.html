@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Резюме- Никита Долгополов</title>
+  <link rel="stylesheet" href="style.css" />
+  <!----Font awesome cdn  font icon css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+  <div class="hero-header">
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <div class="logo-text">Никита Долгополов</div>
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="projects.html">Портфолио</a></li>
+                    <li><a href="resume.html">Резюме</a></li>
+                    <li><a href="reports.html">Тех Документация</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="columnboard-wide">
+
+            <div class="horizontal-group">
+                <h5>Cornell Hyperloop</h5>
+                <p>Cornell Hyperloop разрабатывает миниатюрный электромагнитный поезд (длина 3м) концепта "гиперлуп". За время участия в команде, я стал ее Президентом и Техническим Директором. Я разработал силовую установку на базе линейного индукционного мотора, первую версию системы стабилизации и шасси, а также принимал непосредственное участие в дизайне других механических узлов, электрической архитектуре поезда, а также низковольтных систем.</p>
+                <div class="horizontal-group img" >
+                    <img src="images/logo_hyperloop_bear.png" alt="Logo 3">
+                </div>
+            </div>
+            
+            <div class="horizontal-group">
+                <h5>Tesla Inc. Manufacturing Test</h5>
+                <p>Я работал над end-of-line (EOL) тестером жидкостной системы охлаждения одного из продуктов компании - индустриального аккумуляторного блока Megapack 2XL. Как результат работы, я ускорил процесс тестирования, устранил причины неполадок, и стандартизировал сборку тестера. Для этого спроектировал и проконтролировал производство кастомных деталей заменяющих сборку из 5 деталей, несколько деталей из листового металла, и также перераспределил систему жгутов тестера.</p>
+                <div class="horizontal-group img" >
+                    <img src="images/logo_tesla_white.png" alt="Logo 3">
+                </div>
+            </div>
+
+            <div class="horizontal-group">
+                <h5>Cornell Space Structures</h5>
+                <p>Во время работы в лаборатории, передо мной стояла задача разработать метод соединения частей композитной конструкции в космосе: дизайн самого соединения и производственный процесс. Я разработал дизайн складываемого соединения с помощью параметризированных симуляций в Abaqus, что потребовало написание автономной программы на Python, а потом произвёл и протестировал соездинение, также усовершенствовав производственный процесс.</p>
+                <div class="horizontal-group img" >
+                    <img src="images/css_joint.png" alt="Logo 3">
+                </div>
+            </div>
+
+            <div class="horizontal-group">
+                <h5>Проекты на базе RP2040</h5>
+                <p>На курсе по микроконтроллерам, основанном на Raspberry Pi 2040, я выполнил несколько проектов: Synthesizing Bird Song, Digital Galton Board, PID Helicopter и 2D Tanks Game. Для выполнения проектов, я работал с PWM, VGA, ADC, Low-pass filters, PID, и прочими алгоритмами и функциями микроконтроллера, а также собирал и паял электросхемы.</p>
+                <div class="horizontal-group img" >
+                    <img src="images/pid_helicopter.png" alt="Logo 3">
+                </div>
+            </div>
+
+        </div>
+       
+    </div>
+ </div>
+
+ <footer>
+    <p>&copy; 2025 Никита Долгополов</p>
+ </footer>
+
+ <script>
+    /** creating button click show hide navbar **/
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    var links=document.querySelector(".navlinks li");
+
+    togglebtn.addEventListener("click", function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+    })
+
+ </script>
+
+
+</body>
+</html>
